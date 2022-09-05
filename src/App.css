@@ -47,3 +47,41 @@ section {
   text-align: left;
   margin-top: 0;
 }
+
+/* Dynamic content */
+
+.card {
+  display: flex;
+  flex-flow: column;
+  width: 176px;
+  padding: 20px;
+  color: #222222;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 110%;
+  text-align: left;
+}
+
+.card--image {
+  width: 100%;
+}
+
+.card--info {
+  display: flex;
+  align-items: center;
+  margin: 3px 0;
+}
+
+.card p {
+  margin: 3px 0;
+}
+
+.card--star {
+  width: 14px;
+  height: 14px;
+  margin-right: 5px;
+}
+
+.gray {
+  color: #918E9B;
+}
