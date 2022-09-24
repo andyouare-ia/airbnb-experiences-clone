@@ -15,6 +15,7 @@ function App() {
             country={exp.location}
             title={exp.title}
             price={exp.price}
+            openSpots={exp.openSpots}
           />
   })
 
