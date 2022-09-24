@@ -6,7 +6,7 @@ import Data from './data'
 import './App.css'
 
 function App() {
-  const cardElement = Data.map(exp => {
+  const cards = Data.map(exp => {
     return <Card
             img={exp.coverImg}
             rating={exp.stats.rating}
@@ -16,12 +16,14 @@ function App() {
             price={exp.price}
           />
   })
-  console.log(cardElement)
+
   return (
     <div className="App">
       <Navbar />
       <Hero />
-      {cardElement}
+      <section className="cards-list">
+          {cards}
+      </section>
     </div>
   )
 }

@@ -50,11 +50,17 @@ section {
 
 /* Dynamic content */
 
+.cards-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+}
+
 .card {
   display: flex;
   flex-flow: column;
   width: 176px;
-  padding: 20px;
   color: #222222;
   font-weight: 300;
   font-size: 12px;
