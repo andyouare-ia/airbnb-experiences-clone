@@ -72,6 +72,10 @@ section {
   margin: 3px 0;
 }
 
+.card--info span {
+  padding-right: 5px;
+}
+
 .card p {
   margin: 3px 0;
 }

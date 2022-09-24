@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Card from './components/Card'
+import Photo from './assets/Katie-Zaferes.png'
 
 import './App.css'
 
@@ -9,7 +10,22 @@ function App() {
     <div className="App">
       <Navbar />
       <Hero />
-      <Card />
+      <Card
+        img={Photo}
+        rating={5.0}
+        reviewCount={6}
+        country="USA"
+        title="Life lessons with Katie Zaferes"
+        price={136}
+      />
+      <Card
+        img={Photo}
+        rating={5.0}
+        reviewCount={6}
+        country="USA"
+        title="Life lessons with Katie Zaferes"
+        price={136}
+      />
     </div>
   )
 }
