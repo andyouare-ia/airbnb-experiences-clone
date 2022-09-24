@@ -8,6 +8,7 @@ import './App.css'
 function App() {
   const cards = Data.map(exp => {
     return <Card
+            key={exp.id}
             img={exp.coverImg}
             rating={exp.stats.rating}
             reviewCount={exp.stats.reviewCount}
