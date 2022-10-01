@@ -6,16 +6,10 @@ import Data from './data'
 import './App.css'
 
 function App() {
-  const cards = Data.map(exp => {
+  const cards = Data.map(item => {
     return <Card
-            key={exp.id}
-            img={exp.coverImg}
-            rating={exp.stats.rating}
-            reviewCount={exp.stats.reviewCount}
-            country={exp.location}
-            title={exp.title}
-            price={exp.price}
-            openSpots={exp.openSpots}
+            key={item.id}
+            item={item}
           />
   })
 
