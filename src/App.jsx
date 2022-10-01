@@ -9,7 +9,10 @@ function App() {
   const cards = Data.map(item => {
     return <Card
             key={item.id}
+            // Pass the entire object:
             item={item}
+            // Or spread the item into the Card props
+            // {...item} ==> it passes: id={item.id} title={item.title} ...
           />
   })
 
